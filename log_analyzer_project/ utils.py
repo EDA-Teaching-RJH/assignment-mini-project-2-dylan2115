@@ -8,3 +8,9 @@ def extraxt_timestamp(line: str):
     match = re.search(pattern, line)
     return match.groupe(0) if match else none 
 
+def extract_log_level(line: str):
+#extracts the the type of error(info, warning and error)
+    pattern = r"\b(info|warrning|error)\b"
+    match = re.search(pattern,line)
+    return match.group(0) if match else none
+
