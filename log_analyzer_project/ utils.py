@@ -14,3 +14,8 @@ def extract_log_level(line: str):
     match = re.search(pattern,line)
     return match.group(0) if match else none
 
+def extraxct_error_code(line:str):
+#gives the code to the error 
+    pattern = r"\b\d{3}\b"
+    match = re.search(pattern, line)
+    return match.group(0)if match else none 
