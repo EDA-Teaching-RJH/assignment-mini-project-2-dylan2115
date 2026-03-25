@@ -2,32 +2,32 @@ import re
 
 #functions for regex extraction 
 
-def extraxt_timestamp(line: str):
+def extract_timestamp(line: str):
 #this extracxts the time stamp from the sample log
     pattern = r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}"
     match = re.search(pattern, line)
-    return match.groupe(0) if match else none 
+    return match.group(0) if match else None 
 
 def extract_log_level(line: str):
 #extracts the the type of error(info, warning and error)
-    pattern = r"\b(info|warrning|error)\b"
+    pattern = r"\b(INFO|WARNING|ERROR)\b"
     match = re.search(pattern,line)
-    return match.group(0) if match else none
+    return match.group(0) if match else None
 
-def extraxct_error_code(line:str):
+def extract_error_code(line:str):
 #gives the code to the error 
     pattern = r"\b\d{3}\b"
     match = re.search(pattern, line)
-    return match.group(0)if match else none 
+    return match.group(0)if match else None 
 
 def extract_ip(line: str):
 #extracts the ip addrese from the sample code
     pattern = r"\b(?:\d{1,3}\.){3}\d{1,3}\b"
     match = re.search(pattern, line)
-    return match.group(0) if match else none 
+    return match.group(0) if match else None 
 
 def extract_url(line: str):
 #paths to dash board and or admin 
     pattern = r"\/[A-Za-z0-9\/\-_]+"
     match = re.search(pattern, line)
-    return match.group(0) if match else none 
+    return match.group(0) if match else None 
