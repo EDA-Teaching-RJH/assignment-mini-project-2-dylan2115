@@ -1,0 +1,10 @@
+2024-03-12 14:22:10 ERROR 404 - Failed login from 192.168.1.10
+2024-03-12 14:23:55 INFO User admin accessed /dashboard from 10.0.0.5
+2024-03-12 14:25:01 WARNING Disk space low on /dev/sda1
+2024-03-12 14:26:44 ERROR 500 - Server crashed while processing request from 172.16.0.3
+2024-03-12 14:28:12 INFO User guest accessed /home from 192.168.1.15
+2024-03-12 14:29:33 ERROR 403 - Forbidden access attempt to /admin by 192.168.1.10
+2024-03-12 14:30:45 INFO File /var/log/syslog rotated successfully
+2024-03-12 14:32:18 WARNING High memory usage detected on process 1024
+2024-03-12 14:33:50 ERROR 404 - Page /settings not found for 10.0.0.5
+2024-03-12 14:35:22 INFO User admin logged out from 172.16.0.3
