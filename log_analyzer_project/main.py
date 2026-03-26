@@ -5,8 +5,10 @@ from .analyzer import LogAnalyzer, ErrorLogAnalyzer
 
 def main():
     import inspect
-   
+    
+    print("=" * 20)
     print("Initializing Log File Analyzer...",flush=True)
+    print("=" * 20)
 # Create a LogAnalyzer for the sample log file
 
 
@@ -38,8 +40,9 @@ def main():
     for code, count in error_code_counts.items():
         print(f"   {code}: {count}")
 #counts requests errorcode 
-
-
+    print("=" * 20)
+    print("Analysis complete")
+    print("=" * 20)
 
     if __name__ == "__main__":
         main()
