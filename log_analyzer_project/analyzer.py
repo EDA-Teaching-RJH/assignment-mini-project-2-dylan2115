@@ -51,3 +51,4 @@ class ErrorLogAnalyzer(LogAnalyzer):
         for entry in self.get_errors():
             if entry in self.get_errors():
                 counts[entry.error_code] = counts.get(entry.error_code, 0) + 1
+        return counts
