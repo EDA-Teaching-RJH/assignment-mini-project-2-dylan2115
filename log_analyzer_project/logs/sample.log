@@ -8,3 +8,33 @@
 2024-03-12 14:32:18 WARNING High memory usage detected on process 1024
 2024-03-12 14:33:50 ERROR 404 - Page /settings not found for 10.0.0.5
 2024-03-12 14:35:22 INFO User admin logged out from 172.16.0.3
+11 2024-03-12 14:36:10  INFO User guest accessed /profile from 192.168.1.15
+12 2024-03-12 14:37:22  ERROR 500 - Database timeout while querying user table from 10.0.0.5
+13 2024-03-12 14:38:01  WARNING CPU usage exceeded 85% on server-01
+14 2024-03-12 14:39:44  INFO Scheduled backup completed successfully
+15 2024-03-12 14:40:55  ERROR 401 - Unauthorized API access attempt from 172.16.0.8
+16 2024-03-12 14:42:18  INFO User admin accessed /settings from 192.168.1.10
+17 2024-03-12 14:43:50  WARNING High memory usage detected on process 2048
+18 2024-03-12 14:45:22  ERROR 404 - Resource /reports/2024 missing for 10.0.0.5
+19 2024-03-12 14:46:33  INFO User guest logged out from 192.168.1.15
+20 2024-03-12 14:47:12  ERROR 500 - Server crashed while processing request from 172.16.0.3
+21 2024-03-12 14:48:40  INFO System health check completed with no issues
+22 2024-03-12 14:49:55  WARNING Disk space at 92% on /dev/sdb1
+23 2024-03-12 14:51:10  ERROR 403 - Forbidden access attempt to /admin by 192.168.1.22
+24 2024-03-12 14:52:33  INFO User admin accessed /dashboard from 10.0.0.5
+25 2024-03-12 14:53:44  ERROR 404 - Page /help not found for 172.16.0.3
+26 2024-03-12 14:55:01  WARNING Network latency spike detected between nodes
+27 2024-03-12 14:56:12  INFO File /var/log/auth.log rotated successfully
+28 2024-03-12 14:57:30  ERROR 500 - API endpoint /v1/data failed for 192.168.1.10
+29 2024-03-12 14:58:45  INFO User guest accessed /home from 192.168.1.15
+30 2024-03-12 15:00:00  WARNING Temperature threshold exceeded in server rack 3
+31 2024-03-12 15:01:22  ERROR 403 - Unauthorized attempt to modify config by 10.0.0.9
+32 2024-03-12 15:02:40  INFO User admin logged out from 172.16.0.3
+33 2024-03-12 15:03:55  ERROR 404 - File /downloads/update.zip not found for 192.168.1.10
+34 2024-03-12 15:05:10  WARNING High load average detected on server-02
+35 2024-03-12 15:06:33  INFO User guest accessed /products from 192.168.1.15
+36 2024-03-12 15:07:50  ERROR 500 - Internal server error during payment processing from 10.0.0.5
+37 2024-03-12 15:09:12  INFO Cron job 'cleanup-temp' executed successfully
+38 2024-03-12 15:10:40  WARNING Low available memory on server-01
+39 2024-03-12 15:12:01  ERROR 401 - Unauthorized login attempt from 172.16.0.8
+40 2024-03-12 15:13:22  INFO User admin accessed /reports from 192.168.1.10
