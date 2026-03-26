@@ -2,9 +2,8 @@
 #entry point for log file analyzer project
 from .analyzer import LogAnalyzer, ErrorLogAnalyzer
 #impoerts the classes 
-
-
 from datetime import datetime
+
 print("analysis run at:", datetime.now())
 print("=" * 20)
 
