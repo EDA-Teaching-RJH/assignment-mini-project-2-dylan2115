@@ -40,7 +40,12 @@ class LogAnalyzer:
             counts[entry.ip] = counts.get(entry.ip, 0) + 1 
         return counts 
  #this gives the resuts in a dictunary 
-
+    def count_by_url(self):
+        counts = {}
+        for entry in self.entries:
+            if entry.url:
+                counts[entry.url] = counts.get(entry.url, 0) + 1 
+        return counts
 
 class ErrorLogAnalyzer(LogAnalyzer):
     def get_errors(self):
