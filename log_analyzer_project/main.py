@@ -4,7 +4,7 @@ from .analyzer import LogAnalyzer, ErrorLogAnalyzer
 #impoerts the classes 
 
 def main():
-    print("log file analyzer starting ...")
+    print("log file analyzer starting ...",flush=true)
 # Create a LogAnalyzer for the sample log file
 
 
