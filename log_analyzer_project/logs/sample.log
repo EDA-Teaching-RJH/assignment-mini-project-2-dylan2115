@@ -1,40 +1,45 @@
-2024-03-12 14:22:10 ERROR 404 - Failed login from 192.168.1.10
-2024-03-12 14:23:55 INFO User admin accessed /dashboard from 10.0.0.5
-2024-03-12 14:25:01 WARNING Disk space low on /dev/sda1
-2024-03-12 14:26:44 ERROR 500 - Server crashed while processing request from 172.16.0.3
-2024-03-12 14:28:12 INFO User guest accessed /home from 192.168.1.15
-2024-03-12 14:29:33 ERROR 403 - Forbidden access attempt to /admin by 192.168.1.10
-2024-03-12 14:30:45 INFO File /var/log/syslog rotated successfully
-2024-03-12 14:32:18 WARNING High memory usage detected on process 1024
-2024-03-12 14:33:50 ERROR 404 - Page /settings not found for 10.0.0.5
-2024-03-12 14:35:22 INFO User admin logged out from 172.16.0.3
-11 2024-03-12 14:36:10  INFO User guest accessed /profile from 192.168.1.15
-12 2024-03-12 14:37:22  ERROR 500 - Database timeout while querying user table from 10.0.0.5
-13 2024-03-12 14:38:01  WARNING CPU usage exceeded 85% on server-01
-14 2024-03-12 14:39:44  INFO Scheduled backup completed successfully
-15 2024-03-12 14:40:55  ERROR 401 - Unauthorized API access attempt from 172.16.0.8
-16 2024-03-12 14:42:18  INFO User admin accessed /settings from 192.168.1.10
-17 2024-03-12 14:43:50  WARNING High memory usage detected on process 2048
-18 2024-03-12 14:45:22  ERROR 404 - Resource /reports/2024 missing for 10.0.0.5
-19 2024-03-12 14:46:33  INFO User guest logged out from 192.168.1.15
-20 2024-03-12 14:47:12  ERROR 500 - Server crashed while processing request from 172.16.0.3
-21 2024-03-12 14:48:40  INFO System health check completed with no issues
-22 2024-03-12 14:49:55  WARNING Disk space at 92% on /dev/sdb1
-23 2024-03-12 14:51:10  ERROR 403 - Forbidden access attempt to /admin by 192.168.1.22
-24 2024-03-12 14:52:33  INFO User admin accessed /dashboard from 10.0.0.5
-25 2024-03-12 14:53:44  ERROR 404 - Page /help not found for 172.16.0.3
-26 2024-03-12 14:55:01  WARNING Network latency spike detected between nodes
-27 2024-03-12 14:56:12  INFO File /var/log/auth.log rotated successfully
-28 2024-03-12 14:57:30  ERROR 500 - API endpoint /v1/data failed for 192.168.1.10
-29 2024-03-12 14:58:45  INFO User guest accessed /home from 192.168.1.15
-30 2024-03-12 15:00:00  WARNING Temperature threshold exceeded in server rack 3
-31 2024-03-12 15:01:22  ERROR 403 - Unauthorized attempt to modify config by 10.0.0.9
-32 2024-03-12 15:02:40  INFO User admin logged out from 172.16.0.3
-33 2024-03-12 15:03:55  ERROR 404 - File /downloads/update.zip not found for 192.168.1.10
-34 2024-03-12 15:05:10  WARNING High load average detected on server-02
-35 2024-03-12 15:06:33  INFO User guest accessed /products from 192.168.1.15
-36 2024-03-12 15:07:50  ERROR 500 - Internal server error during payment processing from 10.0.0.5
-37 2024-03-12 15:09:12  INFO Cron job 'cleanup-temp' executed successfully
-38 2024-03-12 15:10:40  WARNING Low available memory on server-01
-39 2024-03-12 15:12:01  ERROR 401 - Unauthorized login attempt from 172.16.0.8
-40 2024-03-12 15:13:22  INFO User admin accessed /reports from 192.168.1.10
+192.168.1.10 - - [12/Mar/2024:10:00:01 +0000] "GET /index.html HTTP/1.1" 200 5320
+192.168.1.11 - - [12/Mar/2024:10:00:02 +0000] "GET /about HTTP/1.1" 200 2100
+192.168.1.12 - - [12/Mar/2024:10:00:03 +0000] "GET /contact HTTP/1.1" 404 0
+192.168.1.13 - - [12/Mar/2024:10:00:04 +0000] "POST /login HTTP/1.1" 302 120
+192.168.1.14 - - [12/Mar/2024:10:00:05 +0000] "GET /dashboard HTTP/1.1" 500 0
+192.168.1.15 - - [12/Mar/2024:10:00:06 +0000] "GET /images/logo.png HTTP/1.1" 200 2048
+192.168.1.16 - - [12/Mar/2024:10:00:07 +0000] "GET /blog HTTP/1.1" 200 5600
+192.168.1.17 - - [12/Mar/2024:10:00:08 +0000] "GET /blog/post1 HTTP/1.1" 200 6300
+192.168.1.18 - - [12/Mar/2024:10:00:09 +0000] "GET /blog/post2 HTTP/1.1" 404 0
+192.168.1.19 - - [12/Mar/2024:10:00:10 +0000] "GET /cart HTTP/1.1" 200 1200
+192.168.1.20 - - [12/Mar/2024:10:00:11 +0000] "POST /checkout HTTP/1.1" 302 0
+192.168.1.21 - - [12/Mar/2024:10:00:12 +0000] "GET /profile HTTP/1.1" 403 0
+192.168.1.22 - - [12/Mar/2024:10:00:13 +0000] "GET /settings HTTP/1.1" 200 2800
+192.168.1.23 - - [12/Mar/2024:10:00:14 +0000] "GET /logout HTTP/1.1" 200 500
+192.168.1.24 - - [12/Mar/2024:10:00:15 +0000] "GET /admin HTTP/1.1" 403 512
+192.168.1.25 - - [12/Mar/2024:10:00:16 +0000] "GET /missing HTTP/1.1" 404 321
+192.168.1.26 - - [12/Mar/2024:10:00:17 +0000] "POST /upload HTTP/1.1" 500 0
+192.168.1.27 - - [12/Mar/2024:10:00:18 +0000] "GET /api/data HTTP/1.1" 500 0
+192.168.1.28 - - [12/Mar/2024:10:00:19 +0000] "GET /api/status HTTP/1.1" 503 0
+192.168.1.29 - - [12/Mar/2024:10:00:20 +0000] "POST /api/update HTTP/1.1" 400 128
+192.168.1.30 - - [12/Mar/2024:10:00:21 +0000] "GET /api/health HTTP/1.1" 200 64
+192.168.1.31 - - [12/Mar/2024:10:00:22 +0000] "GET /home HTTP/1.1" 200 4500
+192.168.1.32 - - [12/Mar/2024:10:00:23 +0000] "GET /products HTTP/1.1" 200 7800
+192.168.1.33 - - [12/Mar/2024:10:00:24 +0000] "GET /products HTTP/1.1" 500 0
+192.168.1.34 - - [12/Mar/2024:10:00:25 +0000] "GET /products HTTP/1.1" 200 7800
+10.0.0.1 - - [12/Mar/2024:10:01:01 +0000] "GET /index.html HTTP/1.1" 200 5320
+10.0.0.2 - - [12/Mar/2024:10:01:02 +0000] "GET /about HTTP/1.1" 200 2100
+10.0.0.3 - - [12/Mar/2024:10:01:03 +0000] "GET /contact HTTP/1.1" 200 1890
+10.0.0.4 - - [12/Mar/2024:10:01:04 +0000] "POST /login HTTP/1.1" 302 120
+10.0.0.5 - - [12/Mar/2024:10:01:05 +0000] "GET /dashboard HTTP/1.1" 200 8200
+10.0.0.6 - - [12/Mar/2024:10:01:06 +0000] "GET /images/logo.png HTTP/1.1" 200 2048
+10.0.0.7 - - [12/Mar/2024:10:01:07 +0000] "GET /blog HTTP/1.1" 200 5600
+10.0.0.8 - - [12/Mar/2024:10:01:08 +0000] "GET /blog/post1 HTTP/1.1" 200 6300
+10.0.0.9 - - [12/Mar/2024:10:01:09 +0000] "GET /blog/post2 HTTP/1.1" 200 6400
+10.0.0.10 - - [12/Mar/2024:10:01:10 +0000] "GET /cart HTTP/1.1" 200 1200
+10.0.0.11 - - [12/Mar/2024:10:01:11 +0000] "POST /checkout HTTP/1.1" 302 0
+10.0.0.12 - - [12/Mar/2024:10:01:12 +0000] "GET /profile HTTP/1.1" 200 3100
+10.0.0.13 - - [12/Mar/2024:10:01:13 +0000] "GET /settings HTTP/1.1" 200 2800
+10.0.0.14 - - [12/Mar/2024:10:01:14 +0000] "GET /logout HTTP/1.1" 200 500
+10.0.0.15 - - [12/Mar/2024:10:01:15 +0000] "GET /home HTTP/1.1" 200 4500
+10.0.0.16 - - [12/Mar/2024:10:01:16 +0000] "GET /products HTTP/1.1" 200 7800
+10.0.0.17 - - [12/Mar/2024:10:01:17 +0000] "GET /products HTTP/1.1" 200 7800
+10.0.0.18 - - [12/Mar/2024:10:01:18 +0000] "GET /products HTTP/1.1" 200 7800
+10.0.0.19 - - [12/Mar/2024:10:01:19 +0000] "GET /home HTTP/1.1" 200 4500
+10.0.0.20 - - [12/Mar/2024:10:01:20 +0000] "GET /home HTTP/1.1" 200 4500
