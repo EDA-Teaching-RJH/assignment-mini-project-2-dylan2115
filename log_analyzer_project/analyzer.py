@@ -45,4 +45,9 @@ class LogAnalyzer:
 class ErrorLogAnalyzer(LogAnalyzer):
     def get_errors(self):
         return [e for e in self.entries if e.log_level == "ERROR"]
-#this class focuses on errors
+ #this class focuses on errors
+    def count_by_error_code(self):
+        counts = {}
+        for entry in self.get_errors():
+            if entry in self.get_errors():
+                counts[entry.error_code] = counts.get(entry.error_code, 0) + 1
