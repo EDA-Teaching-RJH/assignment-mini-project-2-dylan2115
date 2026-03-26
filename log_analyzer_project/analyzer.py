@@ -37,7 +37,8 @@ class LogAnalyzer:
     def count_by_ip(self):
         counts = {}
         for entry in self.entries:
-            counts[entry.ip] = counts.get(entry.ip, 0) + 1 
+            if entry.ip:
+                counts[entry.ip] = counts.get(entry.ip, 0) + 1 
         return counts 
  #this gives the resuts in a dictunary 
     def count_by_url(self):
@@ -54,6 +55,6 @@ class ErrorLogAnalyzer(LogAnalyzer):
     def count_by_error_code(self):
         counts = {}
         for entry in self.get_errors():
-            if entry in self.get_errors():
+            if entry.get_errors:
                 counts[entry.error_code] = counts.get(entry.error_code, 0) + 1
         return counts
