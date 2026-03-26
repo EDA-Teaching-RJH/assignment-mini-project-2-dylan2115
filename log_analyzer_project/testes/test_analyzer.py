@@ -8,3 +8,10 @@ def test_load_entries():
     analyzer.load()
     assert len(analyzer.entries) > 0
 
+def test_count_by_ip():
+    analyzer = LogAnalyzer("Log_analyzer_project/logs/sample.log")
+    analyzer.load()
+    counts = analyzer.count_by_ip()
+    assert isinstance(counts,dict)
+    assert all(isinstance(v, int) for v in counts.values())
+
