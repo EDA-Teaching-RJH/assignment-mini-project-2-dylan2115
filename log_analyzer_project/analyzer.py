@@ -1,7 +1,7 @@
 # analyzer 
 #classes for parsing and analyzing log files 
 
-from utils import (
+from .utils import (
     extract_timestamp,
     extract_log_level,
     extract_error_code,
