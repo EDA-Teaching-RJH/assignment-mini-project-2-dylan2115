@@ -4,14 +4,14 @@ from .analyzer import LogAnalyzer, ErrorLogAnalyzer
 #impoerts the classes 
 
 def main():
-    print("log file analyzer starting ...",flush=True)
+    print(">>> RUN MAKER 12345",flush=True)
 # Create a LogAnalyzer for the sample log file
 
 
 analyzer = LogAnalyzer("log_analyzer_project/logs/sample.log")
 analyzer.load()
 #loads the files 
-print("total log entries:",len(analyzer.entries))
+print("Total log entries:",len(analyzer.entries))
 #prints total files 
 # Create an ErrorLogAnalyzer for the same file
 error_analyzer = ErrorLogAnalyzer("log_analyzer_project/logs/sample.log")
