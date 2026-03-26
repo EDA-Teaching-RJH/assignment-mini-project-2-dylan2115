@@ -1,7 +1,7 @@
 # tests/test_analyzer.py
 # Tests for the Log File Analyzer
 
-from log_analyzer_project.analyzer import LogAnalyzer, ErrorLogAnalyzer
+from Log_analyzer_project.analyzer import LogAnalyzer, ErrorLogAnalyzer
 
 
 def test_load_entries():
