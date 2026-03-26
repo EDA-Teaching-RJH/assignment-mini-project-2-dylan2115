@@ -20,8 +20,8 @@ class LogEntry:
 
     def __repr__(self):
         return f"<LogEntry {self.timestamp} {self.log_level} {self.ip}>"
-#this class shows one line from the sample log 
-#it stores all the values from timestamp to the url 
+ #this class shows one line from the sample log 
+ #it stores all the values from timestamp to the url 
     
 class LogAnalyzer:
     def __init__(self, filepath: str):
@@ -33,7 +33,14 @@ class LogAnalyzer:
             for line in f:
                 entry = LogEntry(line.strip())
                 self.entries.append(entry)
-#loads the log and creates a list of LogEntry objects 
+ #loads the log and creates a list of LogEntry objects
+    def count_by_ip(self):
+        counts = {}
+        for entry in self.entries:
+            counts[entry.ip] = counts.get(entry.ip, 0) + 1 
+        return counts 
+ #this gives the resuts in a dictunary 
+
 
 class ErrorLogAnalyzer(LogAnalyzer):
     def get_errors(self):
