@@ -3,6 +3,23 @@
 from .analyzer import LogAnalyzer, ErrorLogAnalyzer
 #impoerts the classes 
 
+def section(title):
+    print("\n" + "=" * 40)
+    print(title)
+    print("=" * 40)
+
+
+
+
+
+
+
+
+
+
+
+
+
 def main():
     import inspect
     
@@ -24,19 +41,19 @@ def main():
     print("Total error entries:", len(error_analyzer.get_errors()))
 
     ip_counts = analyzer.count_by_ip()
-    print("\nRequests per IP:")
+    section("Requests per IP:")
     for ip, count in ip_counts.items():
         print(f"   {ip}: {count}")
 #count requests per ip
 
     url_counts = analyzer.count_by_url()
-    print("\nRequests per URL:")
+    section("Requests per URL:")
     for url, count in url_counts.items():
         print(f"   {url}: {count}")
 #counts requests per url
 
     error_code_counts = error_analyzer.count_by_error_code()
-    print("\nErrors by code:")
+    section("Errors by code:")
     for code, count in error_code_counts.items():
         print(f"   {code}: {count}")
 #counts requests errorcode 
