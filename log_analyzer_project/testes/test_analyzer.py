@@ -15,3 +15,9 @@ def test_count_by_ip():
     assert isinstance(counts,dict)
     assert all(isinstance(v, int) for v in counts.values())
 
+def test_count_by_url():
+    analyzer = LogAnalyzer("Log_analyzer_project/logs/sample.log")
+    analyzer.load()
+    counts = analyzer.count_by_url()
+    assert isinstance(counts, dict)
+    assert all(isinstance(v, int) for v in counts.values())
