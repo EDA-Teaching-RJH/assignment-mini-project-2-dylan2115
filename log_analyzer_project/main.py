@@ -3,22 +3,15 @@
 from .analyzer import LogAnalyzer, ErrorLogAnalyzer
 #impoerts the classes 
 
+
+from datetime import datetime
+print("analysis run at:", datetime.now())
+print("=" * 20)
+
 def section(title):
     print("\n" + "=" * 40)
     print(title)
     print("=" * 40)
-
-
-
-
-
-
-
-
-
-
-
-
 
 def main():
     import inspect
